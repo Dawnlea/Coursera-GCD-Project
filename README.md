@@ -3,7 +3,7 @@
 This repository contains the work carried out to satisfy the final project of the Getting and Cleaning Data course.
 The contents of this repository are discussed below:
 
- * UCI HAR Dataset - Data collected from the Samsung Galaxy S Smartphone (downloaded from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+ * UCI HAR Dataset - Data collected from the Samsung Galaxy S Smartphone (downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
  * run_analysis.r - An R script that processes the dataset and produces a tidy dataset (tidydata.txt) comprising averages for those vraiables pertaining to mean and std for each activity and subject.
  * tidydata.txt - The tidy data set produced by the run_analysis.r script.
  * CodeBook.md - The code book that details the variables, the data and any transformations that were performed to clean up the data.
