@@ -1,4 +1,8 @@
-
+# ------------------------------------- Check data exists -------------------------------------------
+dataDir<-"UCI HAR Dataset"
+if (!file.exists(dataDir)){
+  stop ("Aborting - UCI HAR Dataset subdirectory does not exist")
+} else {
 
 # ------------------------------------- Read data section -------------------------------------------
 features = read.table("UCI HAR Dataset/features.txt", col.names=c("featureid", "featurelabel"), stringsAsFactors = FALSE)
@@ -65,6 +69,6 @@ result2<- result2[, c(col_idx, (1:ncol(result2))[-col_idx])]
 
 # ----------------------- create a second, independent tidy data set with the average --------------- 
 write.table(result2, "tidydata.txt", row.name=FALSE)
-
+}
 
 
