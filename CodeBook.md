@@ -9,7 +9,9 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
-### For each record it is provided:
+### Record attributes:
+
+For each record, the following attributes are provided
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
@@ -75,5 +77,92 @@ Using the data held in the activity_labels.txt file, descriptive activity labels
 ### 4. Create tidy data set
 Finally a tidy data file (tidydata.txt) is written to the current working directory. This file contains the average of each variable for each activity and each subject, which is calculated using the aggregate() function.
 
+
+## Tidy data set description
+
+The tidy data set contains 180 observations, each with the following variables:
+
+Variable Name                  | Data Type
+------------------------------ | -------------
+activitylabel                  | Character
+activityid                     | Numeric
+subjectid                      | Numeric
+tBodyAccmean()X	               | Double
+tBodyAccmean()Y	               | Double
+tBodyAccmean()Z	               | Double
+tBodyAccstd()X	               | Double
+tBodyAccstd()Y	               | Double
+tBodyAccstd()Z	               | Double
+tGravityAccmean()X	           | Double
+tGravityAccmean()Y	           | Double
+tGravityAccmean()Z	           | Double
+tGravityAccstd()X	             | Double
+tGravityAccstd()Y	             | Double
+tGravityAccstd()Z	             | Double
+tBodyAccJerkmean()X	           | Double
+tBodyAccJerkmean()Y	           | Double
+tBodyAccJerkmean()Z	           | Double
+tBodyAccJerkstd()X	           | Double
+tBodyAccJerkstd()Y 	           | Double
+tBodyAccJerkstd()Z	           | Double
+tBodyGyromean()X	             | Double
+tBodyGyromean()Y	             | Double
+tBodyGyromean()Z	             | Double
+tBodyGyrostd()X	               | Double
+tBodyGyrostd()Y	               | Double
+tBodyGyrostd()Z	               | Double
+tBodyGyroJerkmean()X	         | Double
+tBodyGyroJerkmean()Y	         | Double
+tBodyGyroJerkmean()Z        	 | Double
+tBodyGyroJerkstd()Y	           | Double
+tBodyGyroJerkstd()Z	           | Double
+tBodyAccMagmean()	             | Double
+tBodyAccMagstd()	             | Double
+tGravityAccMagmean()	         | Double
+tGravityAccMag-std()	         | Double
+tBodyAccJerkMag-mean()         | Double
+tBodyAccJerkMagstd()	         | Double
+tBodyGyroMagmean()   	         | Double
+tBodyGyroMagstd()	             | Double
+tBodyGyroJerkMagmean()	       | Double
+tBodyGyroJerkMagstd()	         | Double
+fBodyAccmean()X	               | Double
+fBodyAccmean()Y	               | Double
+fBodyAccmean()Z	               | Double
+fBodyAccstd()X	               | Double
+fBodyAccstd()Y	               | Double
+fBodyAccstd()Z	               | Double
+fBodyAccmeanFreq()X       	   | Double
+fBodyAccmeanFreq()Y	           | Double
+fBodyAccmeanFreq()Z	           | Double
+fBodyAccJerkmean()X	           | Double
+fBodyAccJerkmean()Y	           | Double
+fBodyAccJerkmean()Z	           | Double
+fBodyAccJerkstd()X	           | Double
+fBodyAccJerkstd()Y	           | Double
+fBodyAccJerkstd()Z             | Double
+fBodyAccJerkmeanFreq()X	       | Double
+fBodyAccJerkmeanFreq()Y	       | Double
+fBodyAccJerkmeanFreq()Z        | Double
+fBodyGyromean()X	             | Double
+fBodyGyromean()Y	             | Double
+fBodyGyrostd()X	               | Double
+fBodyGyrostd()Y	               | Double
+fBodyGyrostd()Z	               | Double
+fBodyGyromeanFreq()X	         | Double
+fBodyGyromeanFreq()Y	         | Double
+fBodyGyromeanFreq()Z	         | Double
+fBodyAccMagmean()	             | Double
+fBodyAccMagstd()	             | Double
+fBodyAccMagmeanFreq()	         | Double
+fBodyBodyAccJerkMagmean()	     | Double
+fBodyBodyAccJerkMagstd()	     | Double
+fBodyBodyAccJerkMagmeanFreq()	 | Double
+fBodyBodyGyroMagmean()	       | Double
+fBodyBodyGyroMagstd()	         | Double
+fBodyBodyGyroMagmeanFreq()     | Double
+fBodyBodyGyroJerkMagmean()     | Double
+fBodyBodyGyroJerkMagstd()	     | Double
+fBodyBodyGyroJerkMagmeanFreq() | Double
 
  
